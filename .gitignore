@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Cookies / session data
+cookies.txt
+admincookies.txt
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Build output
+dist/
+build/
+client/dist/
+
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Temporary files
+*.tmp
+*.temp
+scratch-*
+
+# Internal project documentation
+A_TO_Z_RUN_GUIDE.md
+OMI_CHECKLIST.pdf
+walkthrough.md
+emni.md
