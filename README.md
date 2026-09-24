@@ -1,6 +1,3 @@
-Absolutely. Copy **only the content inside this single Markdown block** and paste it into GitHub's `README.md` editor.
-
-````markdown
 # 🎮 Game Review & Library Management System
 
 A full-stack gaming platform that brings together a **game marketplace, reviews, user libraries, community interaction, real-time notifications, subscriptions, recommendations, events, and administrative management** in one system.
@@ -15,19 +12,19 @@ The **Game Review & Library Management System** is a collaborative full-stack we
 
 The platform provides users with a complete gaming ecosystem where they can:
 
-- Discover and review games
-- Browse and manage marketplace listings
-- Purchase and manage games
-- Maintain a personal wishlist
-- Compare games
-- Participate in community discussions
-- Join events and tournaments
-- Receive real-time notifications
-- Subscribe to premium plans
-- Receive personalized game recommendations
-- Earn achievement badges
-- Refer other users
-- Access gaming-related services and content
+* Discover and review games
+* Browse and manage marketplace listings
+* Purchase and manage games
+* Maintain a personal wishlist
+* Compare games
+* Participate in community discussions
+* Join events and tournaments
+* Receive real-time notifications
+* Subscribe to premium plans
+* Receive personalized game recommendations
+* Earn achievement badges
+* Refer other users
+* Access gaming-related services and content
 
 Administrators can manage platform operations through a dedicated **Admin Dashboard**, including users, marketplace content, advertisements, and other system resources.
 
@@ -35,23 +32,23 @@ Administrators can manage platform operations through a dedicated **Admin Dashbo
 
 ## ✨ Core Features
 
-| Category | Features |
-|---|---|
-| 🔐 Authentication | User registration, login, authentication and protected access |
-| 🛒 Marketplace | Game listings, categories, purchases and reviews |
-| 👤 User Management | User dashboard, profiles, balance and account management |
-| ❤️ Wishlist | Save games and manage wishlist items |
-| ⚖️ Game Tools | Game comparison and detailed game information |
-| 💳 Subscriptions | Subscription plans and related benefits |
-| 💬 Community | Forums, discussions, threads, comments and interaction |
-| 🔔 Real-Time System | Real-time notifications using Socket.IO |
-| 🏆 Gamification | Leaderboard, achievement badges and referrals |
-| 🎮 Events | Events and tournament management |
-| 🤖 AI Features | Smart game recommendations and AI Game Coach |
-| 🌐 Platform Services | Localization and live streaming hub |
-| 📢 Advertising | Advertisement management and platform promotions |
-| 🔒 Advanced Transactions | Trade escrow system |
-| 🛠️ Administration | Dedicated admin dashboard and management tools |
+| Category                 | Features                                                      |
+| ------------------------ | ------------------------------------------------------------- |
+| 🔐 Authentication        | User registration, login, authentication and protected access |
+| 🛒 Marketplace           | Game listings, categories, purchases and reviews              |
+| 👤 User Management       | User dashboard, profiles, balance and account management      |
+| ❤️ Wishlist              | Save games and manage wishlist items                          |
+| ⚖️ Game Tools            | Game comparison and detailed game information                 |
+| 💳 Subscriptions         | Subscription plans and related benefits                       |
+| 💬 Community             | Forums, discussions, threads, comments and interaction        |
+| 🔔 Real-Time System      | Real-time notifications using Socket.IO                       |
+| 🏆 Gamification          | Leaderboard, achievement badges and referrals                 |
+| 🎮 Events                | Events and tournament management                              |
+| 🤖 AI Features           | Smart game recommendations and AI Game Coach                  |
+| 🌐 Platform Services     | Localization and live streaming hub                           |
+| 📢 Advertising           | Advertisement management and platform promotions              |
+| 🔒 Advanced Transactions | Trade escrow system                                           |
+| 🛠️ Administration       | Dedicated admin dashboard and management tools                |
 
 ---
 
@@ -82,7 +79,7 @@ Administrators can manage platform operations through a dedicated **Admin Dashbo
                     ┌──────────────────────┐
                     │    MySQL Database    │
                     └──────────────────────┘
-````
+```
 
 ---
 
@@ -137,9 +134,7 @@ game-review-library-management-system/
 │   └── ...
 │
 ├── public/
-│
 ├── docs/
-│
 ├── database.sql
 ├── database_seed.sql
 ├── server.js
@@ -154,8 +149,6 @@ game-review-library-management-system/
 ## ⚙️ Getting Started
 
 ### Prerequisites
-
-Make sure the following are installed:
 
 * Node.js 18+
 * npm
@@ -208,8 +201,6 @@ DB_PASSWORD=your_database_password
 DB_NAME=your_database_name
 ```
 
-Use your own local database credentials.
-
 ### 6. Start the Backend
 
 ```bash
@@ -225,13 +216,9 @@ cd client
 npm run dev
 ```
 
-The application can then be accessed through the local development address shown by Vite.
-
 ---
 
 ## 👨‍💻 Team Contributions
-
-This project was developed collaboratively by four team members. Each member was responsible for multiple major features of the system.
 
 ### Zead Raihan
 
@@ -304,8 +291,6 @@ This project was developed collaboratively by four team members. Each member was
 
 ## 🔑 Key Technical Concepts
 
-This project demonstrates practical implementation of:
-
 * Full-stack web application architecture
 * RESTful API development
 * React component-based frontend development
@@ -335,29 +320,27 @@ The documentation contains supporting information about the application's struct
 
 ## 🎯 Project Highlights
 
-The system combines several different types of software functionality into one platform:
-
-**E-Commerce**
+### E-Commerce
 
 Game marketplace, listings, purchases and transaction-related workflows.
 
-**Social Platform**
+### Social Platform
 
 Community forums, discussions, user interaction and live platform features.
 
-**Real-Time Application**
+### Real-Time Application
 
 Socket.IO-powered real-time notifications and communication.
 
-**Gamification**
+### Gamification
 
 Leaderboards, achievement badges and referral-based features.
 
-**AI-Enabled Features**
+### AI-Enabled Features
 
 Smart game recommendations and an AI Game Coach.
 
-**Administration**
+### Administration
 
 Dedicated administrative functionality for managing platform resources and operations.
 
@@ -378,7 +361,7 @@ Dedicated administrative functionality for managing platform resources and opera
 
 * Environment variables should be stored in `.env` and should never be committed.
 * Database credentials should be replaced with local credentials when running the project.
-* Demo/seed credentials, if included in the database seed file, are intended only for local development.
+* Demo/seed credentials are intended only for local development.
 * Sensitive production credentials should never be stored in the repository.
 
 ---
@@ -388,6 +371,3 @@ Dedicated administrative functionality for managing platform resources and opera
 No open-source license has been specified for this repository.
 
 This project was developed as a collaborative academic software engineering project.
-
-```
-```
