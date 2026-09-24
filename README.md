@@ -79,6 +79,12 @@ Administrators can manage platform operations through a dedicated **Admin Dashbo
                     ┌──────────────────────┐
                     │    MySQL Database    │
                     └──────────────────────┘
+
+## 📊 Class Diagram
+
+The class diagram shows the main classes of the system and the relationships between them.
+
+![Class Diagram](docs/class-diagram.png)                    
 ```
 
 ---
