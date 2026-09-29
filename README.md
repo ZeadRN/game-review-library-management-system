@@ -8,19 +8,15 @@
 
 Gamers' Gambit brings marketplace, library, social, and administration features into one platform. Users can browse listings, make purchases, write reviews, manage personal content, and participate in the community. Administrators manage platform resources through a dedicated dashboard.
 
-## Screenshots
+## Interface preview
 
-### Home page
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/066dc23d-47b4-456a-b042-26fe087f62fa" alt="Home page" width="31%" />
+  <img src="https://github.com/user-attachments/assets/02bb6c34-1b2e-4777-a7f6-0d37f8e2c094" alt="User login" width="31%" />
+  <img src="https://github.com/user-attachments/assets/1573fc26-f8eb-4c03-83a8-90fe6172b023" alt="Smart recommendations" width="31%" />
+</p>
 
-![Gamers' Gambit home page](https://github.com/user-attachments/assets/066dc23d-47b4-456a-b042-26fe087f62fa)
-
-### User login
-
-![Gamers' Gambit login page](https://github.com/user-attachments/assets/02bb6c34-1b2e-4777-a7f6-0d37f8e2c094)
-
-### Smart recommendations
-
-![Gamers' Gambit smart recommendations page](https://github.com/user-attachments/assets/1573fc26-f8eb-4c03-83a8-90fe6172b023)
+<p align="center"><em>Home page · User login · Smart recommendations</em></p>
 
 ## Key features
 
