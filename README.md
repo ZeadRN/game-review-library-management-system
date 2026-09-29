@@ -375,3 +375,12 @@ Dedicated administrative functionality for managing platform resources and opera
 No open-source license has been specified for this repository.
 
 This project was developed as a collaborative academic software engineering project.
+---
+## 📸 Project Screenshots
+The following screenshots show the working React interface of Gamers' Gambit.
+### Home Page
+<img width="519" height="533" alt="clipboard" src="https://github.com/user-attachments/assets/066dc23d-47b4-456a-b042-26fe087f62fa" />
+### User Login
+<img width="534" height="548" alt="clipboard" src="https://github.com/user-attachments/assets/02bb6c34-1b2e-4777-a7f6-0d37f8e2c094" />
+### Smart Recommendations
+<img width="519" height="533" alt="clipboard" src="https://github.com/user-attachments/assets/1573fc26-f8eb-4c03-83a8-90fe6172b023" />
