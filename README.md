@@ -1,202 +1,79 @@
 # 🎮 Game Review & Library Management System
 
-A full-stack gaming platform that brings together a **game marketplace, reviews, user libraries, community interaction, real-time notifications, subscriptions, recommendations, events, and administrative management** in one system.
+> A collaborative full-stack university project for discovering, reviewing, buying, and managing games.
 
-**Built with:** React • Node.js • Express.js • MySQL • Socket.IO
+**Built with:** React · Node.js · Express.js · MySQL · Socket.IO
 
----
+## Overview
 
-## 📌 Overview
+Gamers' Gambit brings marketplace, library, social, and administration features into one platform. Users can browse listings, make purchases, write reviews, manage personal content, and participate in the community. Administrators manage platform resources through a dedicated dashboard.
 
-The **Game Review & Library Management System** is a collaborative full-stack web application developed as a software engineering project.
+## Screenshots
 
-The platform provides users with a complete gaming ecosystem where they can:
+### Home page
 
-* Discover and review games
-* Browse and manage marketplace listings
-* Purchase and manage games
-* Maintain a personal wishlist
-* Compare games
-* Participate in community discussions
-* Join events and tournaments
-* Receive real-time notifications
-* Subscribe to premium plans
-* Receive personalized game recommendations
-* Earn achievement badges
-* Refer other users
-* Access gaming-related services and content
+![Gamers' Gambit home page](https://github.com/user-attachments/assets/066dc23d-47b4-456a-b042-26fe087f62fa)
 
-Administrators can manage platform operations through a dedicated **Admin Dashboard**, including users, marketplace content, advertisements, and other system resources.
+### User login
 
----
+![Gamers' Gambit login page](https://github.com/user-attachments/assets/02bb6c34-1b2e-4777-a7f6-0d37f8e2c094)
 
-## ✨ Core Features
+### Smart recommendations
 
-| Category                 | Features                                                      |
-| ------------------------ | ------------------------------------------------------------- |
-| 🔐 Authentication        | User registration, login, authentication and protected access |
-| 🛒 Marketplace           | Game listings, categories, purchases and reviews              |
-| 👤 User Management       | User dashboard, profiles, balance and account management      |
-| ❤️ Wishlist              | Save games and manage wishlist items                          |
-| ⚖️ Game Tools            | Game comparison and detailed game information                 |
-| 💳 Subscriptions         | Subscription plans and related benefits                       |
-| 💬 Community             | Forums, discussions, threads, comments and interaction        |
-| 🔔 Real-Time System      | Real-time notifications using Socket.IO                       |
-| 🏆 Gamification          | Leaderboard, achievement badges and referrals                 |
-| 🎮 Events                | Events and tournament management                              |
-| 🤖 AI Features           | Smart game recommendations and AI Game Coach                  |
-| 🌐 Platform Services     | Localization and live streaming hub                           |
-| 📢 Advertising           | Advertisement management and platform promotions              |
-| 🔒 Advanced Transactions | Trade escrow system                                           |
-| 🛠️ Administration       | Dedicated admin dashboard and management tools                |
+![Gamers' Gambit smart recommendations page](https://github.com/user-attachments/assets/1573fc26-f8eb-4c03-83a8-90fe6172b023)
 
----
+## Key features
 
-## 🏗️ System Architecture
+| Area | Includes |
+| --- | --- |
+| Marketplace | Game listings, categories, purchases, and reviews |
+| User space | Dashboard, profile, balance, wishlist, and library tools |
+| Community | Forums, discussions, events, and real-time notifications |
+| Game tools | Game comparison and smart recommendations |
+| Platform services | Subscriptions, referrals, achievement badges, localization, and live streaming |
+| Administration | Dashboard controls for users, listings, and platform resources |
+
+## Architecture
 
 ```text
-                    ┌──────────────────────┐
-                    │      React Client    │
-                    │     Vite + JS        │
-                    └──────────┬───────────┘
-                               │
-                    REST API + Socket.IO
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │    Node.js Server    │
-                    │      Express.js      │
-                    ├──────────────────────┤
-                    │ Routes               │
-                    │ Controllers          │
-                    │ Models               │
-                    │ Middleware           │
-                    │ Authentication       │
-                    │ Socket.IO            │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │    MySQL Database    │
-                    └──────────────────────┘
+React + Vite client
+        ↓  REST API / Socket.IO
+Node.js + Express server
+        ↓
+MySQL database
 ```
 
-## 📊 Class Diagram
+The backend is organized into routes, controllers, models, middleware, and database tables. Socket.IO supports real-time notifications.
 
-The class diagram shows the main classes of the system and the relationships between them.
-
-![Class Diagram](docs/class-diagram.png)
-
----
-
-## 🛠️ Technology Stack
-
-### Frontend
-
-* React
-* Vite
-* JavaScript
-* HTML5
-* CSS3
-
-### Backend
-
-* Node.js
-* Express.js
-* REST APIs
-* Socket.IO
-
-### Database
-
-* MySQL
-* SQL
-
-### Development Tools
-
-* Git
-* GitHub
-* npm
-* Visual Studio Code
-
----
-
-## 📂 Project Structure
+## Project structure
 
 ```text
-game-review-library-management-system/
-│
-├── client/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       └── ...
-│
-├── server/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   └── ...
-│
-├── public/
-├── docs/
-├── database.sql
-├── database_seed.sql
-├── server.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+client/     # React and Vite frontend
+server/     # routes, controllers, models, middleware, and configuration
+docs/       # supporting project documentation
+database.sql
+server.js
 ```
 
-## ⚙️ Getting Started
+## Getting started
 
 ### Prerequisites
 
-* Node.js 18+
-* npm
-* MySQL or MariaDB
-* Git
+- Node.js 18+
+- npm
+- MySQL or MariaDB
+- Git
 
-### 1. Clone the Repository
+### Install and run
 
 ```bash
 git clone https://github.com/ZeadRN/game-review-library-management-system.git
 cd game-review-library-management-system
-```
-
-### 2. Install Backend Dependencies
-
-```bash
 npm install
+cd client && npm install && cd ..
 ```
 
-### 3. Install Frontend Dependencies
-
-```bash
-cd client
-npm install
-cd ..
-```
-
-### 4. Configure the Database
-
-Create a MySQL database and import:
-
-```text
-database.sql
-```
-
-Optional sample data can be loaded from:
-
-```text
-database_seed.sql
-```
-
-### 5. Configure Environment Variables
-
-Create a `.env` file in the project root:
+Create a local `.env` file with your database credentials:
 
 ```env
 DB_HOST=localhost
@@ -205,182 +82,30 @@ DB_PASSWORD=your_database_password
 DB_NAME=your_database_name
 ```
 
-### 6. Start the Backend
+Import `database.sql` into MySQL, then run the backend and frontend in separate terminals:
 
 ```bash
+# Terminal 1
 npm start
-```
 
-### 7. Start the Frontend
-
-Open another terminal:
-
-```bash
+# Terminal 2
 cd client
 npm run dev
 ```
 
----
+## Team contributions
 
-## 👨‍💻 Team Contributions
+| Team member | Primary contributions |
+| --- | --- |
+| **Zead Raihan** | Marketplace Core, Admin Dashboard, Game Comparison, Referral System, Achievement Badges |
+| **Abdullah Al Omi** | Authentication, Static Pages, Subscriptions, Help Center, Localization, Live Streaming |
+| **Tahmida Ahmed Tufa** | User Dashboard & Profile, Balance, Wishlist, Leaderboard, Smart Recommendations |
+| **Md. Samimul Islam Sakil** | Notifications, Community Forum, Events, Advertisements, Trade Escrow, AI Game Coach |
 
-### Zead Raihan
+## Documentation and security
 
-**Marketplace • Administration • Game Tools • Gamification**
-
-* Marketplace Core
-* Admin Dashboard
-* Game Comparison Tool
-* Referral System
-* Achievement Badges
-
-### Abdullah Al Omi
-
-**Authentication • Platform • Subscriptions • Support**
-
-* User Authentication
-* Home and Static Pages
-* Subscription System
-* Help Center
-* Localization and Live Streaming Hub
-
-### Tahmida Ahmed Tufa
-
-**User Management • Finance • Recommendations • Gamification**
-
-* User Dashboard and Profile
-* Balance System
-* Wishlist
-* Leaderboard
-* Smart Recommendations
-
-### Md. Samimul Islam Sakil
-
-**Real-Time Systems • Community • Events • Advanced Features**
-
-* Real-Time Notification System using Socket.IO
-* Community Forum
-* Events and Tournaments
-* Advertisement System
-* Trade Escrow and AI Game Coach
+See the `docs/` folder for project documentation. Keep database credentials in `.env`; do not commit secrets to the repository.
 
 ---
 
-## 📊 Feature Distribution
-
-| Feature Area                      | Responsible Member      |
-| --------------------------------- | ----------------------- |
-| Marketplace Core                  | Zead Raihan             |
-| Admin Dashboard                   | Zead Raihan             |
-| Game Comparison                   | Zead Raihan             |
-| Referral System                   | Zead Raihan             |
-| Achievement Badges                | Zead Raihan             |
-| User Authentication               | Abdullah Al Omi         |
-| Home & Static Pages               | Abdullah Al Omi         |
-| Subscription System               | Abdullah Al Omi         |
-| Help Center                       | Abdullah Al Omi         |
-| Localization & Live Streaming Hub | Abdullah Al Omi         |
-| User Dashboard & Profile          | Tahmida Ahmed Tufa      |
-| Balance System                    | Tahmida Ahmed Tufa      |
-| Wishlist                          | Tahmida Ahmed Tufa      |
-| Leaderboard                       | Tahmida Ahmed Tufa      |
-| Smart Recommendations             | Tahmida Ahmed Tufa      |
-| Real-Time Notifications           | Md. Samimul Islam Sakil |
-| Community Forum                   | Md. Samimul Islam Sakil |
-| Events & Tournaments              | Md. Samimul Islam Sakil |
-| Advertisement System              | Md. Samimul Islam Sakil |
-| Trade Escrow & AI Game Coach      | Md. Samimul Islam Sakil |
-
----
-
-## 🔑 Key Technical Concepts
-
-* Full-stack web application architecture
-* RESTful API development
-* React component-based frontend development
-* Node.js and Express.js backend development
-* Relational database design with MySQL
-* Authentication and authorization
-* Role-based access control
-* Real-time communication using Socket.IO
-* Marketplace and transaction workflows
-* User account and balance management
-* Community and discussion systems
-* Event and tournament management
-* Recommendation systems
-* AI-assisted application features
-* Gamification and achievement systems
-* Administrative dashboards
-
----
-
-## 📚 Documentation
-
-Additional project documentation is available in the `docs/` directory.
-
-The documentation contains supporting information about the application's structure, features, development process, and implementation details.
-
----
-
-## 🎯 Project Highlights
-
-### E-Commerce
-
-Game marketplace, listings, purchases and transaction-related workflows.
-
-### Social Platform
-
-Community forums, discussions, user interaction and live platform features.
-
-### Real-Time Application
-
-Socket.IO-powered real-time notifications and communication.
-
-### Gamification
-
-Leaderboards, achievement badges and referral-based features.
-
-### AI-Enabled Features
-
-Smart game recommendations and an AI Game Coach.
-
-### Administration
-
-Dedicated administrative functionality for managing platform resources and operations.
-
----
-
-## 👥 Development Team
-
-| Member                      | Primary Contributions                                                        |
-| --------------------------- | ---------------------------------------------------------------------------- |
-| **Zead Raihan**             | Marketplace, Admin Dashboard, Game Comparison, Referrals, Achievement Badges |
-| **Abdullah Al Omi**         | Authentication, Static Pages, Subscriptions, Help Center, Localization       |
-| **Tahmida Ahmed Tufa**      | Dashboard, Balance, Wishlist, Leaderboard, Recommendations                   |
-| **Md. Samimul Islam Sakil** | Notifications, Forum, Events, Advertisements, Trade Escrow & AI Coach        |
-
----
-
-## 🔒 Security Notes
-
-* Environment variables should be stored in `.env` and should never be committed.
-* Database credentials should be replaced with local credentials when running the project.
-* Demo/seed credentials are intended only for local development.
-* Sensitive production credentials should never be stored in the repository.
-
----
-
-## 📄 License
-
-No open-source license has been specified for this repository.
-
-This project was developed as a collaborative academic software engineering project.
----
-## 📸 Project Screenshots
-The following screenshots show the working React interface of Gamers' Gambit.
-### Home Page
-<img width="519" height="533" alt="clipboard" src="https://github.com/user-attachments/assets/066dc23d-47b4-456a-b042-26fe087f62fa" />
-### User Login
-<img width="534" height="548" alt="clipboard" src="https://github.com/user-attachments/assets/02bb6c34-1b2e-4777-a7f6-0d37f8e2c094" />
-### Smart Recommendations
-<img width="519" height="533" alt="clipboard" src="https://github.com/user-attachments/assets/1573fc26-f8eb-4c03-83a8-90fe6172b023" />
+Developed as a collaborative academic software engineering project.
